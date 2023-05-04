@@ -25,7 +25,7 @@ curl localhost:3000/invoices
 rails test
 ```
 
-The most important thing in this application to test is the fee accrual. There is a method in [app/models/invoice.rb](app/models/invoice.rb) that calcuates the accrued fees. There are a few tests in [test/models/invoice_test.rb](app/models/invoice.rb) to test this calculation.
+The most important thing in this application to test is the fee accrual. There is a method in [app/models/invoice.rb](app/models/invoice.rb) that calcuates the accrued fees. There are a few tests in [test/models/invoice_test.rb](test/models/invoice_test.rb) to test this calculation.
 
 Additionally I didn't write any state transition tests because AASM is a well tested state machine library. Testing this would cost time for little benefit. Similarly, I saw little reason to test the Borrower model because it does nothing. 
 
